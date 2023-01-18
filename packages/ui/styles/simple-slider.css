@@ -1,0 +1,15 @@
+.simple-swiper-pagination-horizontal {
+  @apply !w-auto !left-1/2 !bottom-8 -translate-x-1/2;
+}
+
+.simple-swiper-pagination-bullets {
+  @apply flex items-center justify-center h-2 z-20;
+}
+
+.simple-swiper-pagination-bullet {
+  @apply inline-block h-1 w-1 bg-transparent border border-white rounded-full cursor-pointer transition-all duration-200 mx-1;
+}
+
+.simple-swiper-pagination-bullet-active {
+  @apply !w-2 !h-2 !bg-white;
+}

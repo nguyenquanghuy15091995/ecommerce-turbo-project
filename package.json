@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce-storefront",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "turbo run start",
+    "start:storefront": "turbo run start --filter=./apps/site-storefront",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:storefront": "turbo run dev --filter=./apps/site-storefront",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "sb:ui-system": "turbo run storybook --filter=./apps/storybook-ui-system"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.19"
+}
